@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTour - Payment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/037/248/582/small_2x/ai-generated-travelling-to-thailand-advertisment-background-with-copy-space-free-photo.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: black;
+      padding: 15px 60px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-family:'Poppins', sans-serif;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f9a825;
+    }
+
+    /* Payment Form */
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50px;
+    }
+
+    .payment-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      width: 500px;
+      margin: 10px;
+    }
+
+    .payment-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .payment-options {
+      margin: 10px 0;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 10px; /* small space between buttons */
+      margin-top: 15px;
+    }
+
+    .btn {
+      flex: 1; 
+      padding: 15px 0;  /* equal width for all buttons */
+      padding: 10px;
+      margin-left: 25px;
+      width: 200px;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+      color: white;
+    }
+
+    .btn.pay {
+      background: #2e7d32;
+    }
+
+    .btn.pay:hover {
+      background: #1b5e20;
+    }
+
+    .btn.close {
+      background: #c62828;
+    }
+
+    .btn.close:hover {
+      background: #8e0000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="frontpage.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="destination.html">Destinations</a>
+    <a href="booking.html">Bookings</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <!-- Payment Form -->
+  <div class="container">
+    <div class="payment-box">
+      <h2>Payment</h2>
+      <form>
+        <label>Payee Name</label>
+        <input type="text" placeholder="Enter name" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+
+        <label>Payment Details</label>
+        <div class="payment-options">
+          <input type="radio" name="payment" value="credit" checked> Credit Card
+          <input type="radio" name="payment" value="debit"> Debit Card
+        </div>
+
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" maxlength="16" required>
+
+        <label>Valid Upto</label>
+        <input type="date" required>
+
+        <label>Amount</label>
+        <input type="number" placeholder="Enter amount" required>
+
+        <label>Zip Code</label>
+        <input type="text" placeholder="Enter Zip Code" required>
+
+        <div class="btn-container">
+          <a href="successful.html"><button type="button" class="btn pay">Pay Now</button></a>
+          <a href="frontpage.html"><button type="reset" class="btn close">Close</button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.body
+{
+    background-image:urll('background/background.png');
+    background-size: cover;
+    color:rgb(8, 5, 5);
+    font-family:sans-serif;
+    
+    }
+
+.wrapper
+{
+    position:absolute;
+    top:40%;
+    left:40%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    padding: 25px;
+    border-radius:0.8rem;
+    
+    
+}
+.wrapper img{
+    width: 100px;
+
+}
+.wrapper h1{
+    font-size:40px;
+}
+.wrapper h3{
+    font-size:25px;
+    font-weight:400;
+}
+.wrapper field{
+    height: 60px;
+}
+.wrapper input{
+    height:50px;
+    outline:none;
+    border:none;
+    border-radius :8px;
+    margin:12px;
+    width:400px;
+    font-size: 20px;
+
+}
+
+
+.wrapper span{
+    position: absolute;
+    color:black;
+    padding:4px;
+}
+.wrapper button{
+    width:200px;
+    height: 50px;
+    border :none;
+    gap:30px;
+    border-radius: 7px;
+    background:rgb(60, 176, 243);
+    font-size:20px;
+
+}
+
+    
+
+
+.link1 a{
+    text-decoration:none;
+    
+}
+.input{
+    background:rgba(255,255,255,0.1);
+}
