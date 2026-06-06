@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>tour</title>
+        <link rel="stylesheet" href="frontpage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">  
+<style>
+    /* Reset */
+    * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+        scroll-behavior:smooth;
+         background-size: cover;
+    background-attachment: fixed;
+    }
+
+    /* Header/Navbar */
+   
+
+    nav {
+        display: flex;
+        justify-content: flex-end; /* Change to center to center navbar */
+        align-items: center;
+        gap: 30px; /* space between links and button */
+        background: rgba(0,0,0,0.7);
+        padding: 15px 40px;
+    }
+
+    nav .navmenu {
+        display: flex;
+        gap: 30px; /* space between links */
+    }
+
+    nav .navmenu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav .navmenu a:hover {
+        color: #f9a825;
+    }
+
+    .nav-btn {
+        font-size: 16px;
+        color: #fff;
+        background-color: black;
+        border: 2px solid #fff;
+        padding: 7px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .nav-btn:hover {
+        background-color: #f9a825;
+        border-color: #f9a825;
+        color: black;
+    }
+
+    #menu-icon {
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+</style>
+</head>
+    <body>
+            <nav>
+                <div class="navmenu">
+                    <a href="frontpage.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="destination.html">Destinations</a>
+                    <a href="booking.html">Bookings</a>
+                    <a href="payment.html">Payment</a>
+                </div>
+                <a href="login.html" class ="nav-btn">Login</a>
+                <a href="signin.html" class="nav-btn">Signup</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </nav>
+
+        <section class="home" id="home">
+            <div class="home-text">
+                <h4>Best Desitination  Around The World</h4>
+                <h1>Travel,Enjoy and Live <br>a new and full life</h1>
+                <p>“Everything in nature invites us constantly to be what we are.” <br>
+                   “Every flower is a soul blossoming in nature.” “Heaven is under<br>
+                    our feet as well as over our heads.” "In every walk with nature<br>
+                     one receives far more than he seeks."</p>
+            <div class="button">
+                <a href="destination.html" class="btn1">Find out more</a>
+                <b><a href="https://youtu.be/AwvsAjNkv94" class="btn2"><span><i class='bx bx-play'></i></span>
+                Play Demo</a></b>
+            </div>
+                    </div>
+                
+                   
+        </section>
+    </body>
+</html>

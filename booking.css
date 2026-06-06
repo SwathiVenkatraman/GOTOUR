@@ -1,0 +1,90 @@
+body{ 
+    box-shadow:
+    6.3px 6.3px 32.9px rgba(142, 42, 42, 0.061),
+    23.5px 23.5px 43.5px rgba(0, 0, 0, 0.09),
+    100px 100px 80px rgba(0, 0, 0, 0.16)
+  ;
+  margin-left: 9rem;
+  border-radius: 30px;
+}
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none;
+    margin-top: 5%;
+    font-size:30px;
+    padding :25px 12%;
+}
+
+.navmenu
+{
+    display:flex;
+    text-decoration: none;
+    
+
+}
+.navmenu a{
+    color:#212832;
+    text-transform:capitalize;
+    font-weight:500;
+    padding :0px 25px 0 50px;
+    transition: all .42s;
+    text-decoration: none;
+}
+.navmenu  a::after
+{
+    text-decoration: none;
+}
+.navmenu a:hover::after{
+    width:100%;
+    text-decoration: none;
+}
+form{
+    width: 800px;
+    margin:200px auto 0 auto;
+    padding:10px; 
+    box-shadow:0 4px 8px 0#5a676d,0 4px 8px 0 #30475e;  
+    border-radius:30px;
+    height: max-content;
+    margin-top: 16%;
+}
+h1{
+    text-align:center;
+
+}
+.box1{
+    width: 100%;
+    padding: 10px;
+    border:none;
+    border-radius: 15px;
+    box-sizing:border-box;
+    margin:10px 0 30px 0;
+
+}
+.div1{
+    display:inline-block;   
+}
+.box2{
+    padding:10px;
+    border:none;
+    border-radius: 15px;
+    margin:10px 0 30px 0;
+    width:50%;
+    color:black;
+}
+.btn{
+    width:49%;
+    padding:10px;
+    border: none;
+    border-radius: 15px;
+    font-size:18px;
+}
+.id{
+    color:black;
+}

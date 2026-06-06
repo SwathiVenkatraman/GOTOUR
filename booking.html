@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 60px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family:'Poppins', sans-serif;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f9a825;
+        }
+
+    body {
+      background: url("https://wallpapercave.com/wp/wp2005056.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px;
+    }
+
+    .booking-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 600px;
+      animation: fadeIn 1s ease;
+     
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #00bcd4;
+      box-shadow: 0px 0px 6px rgba(0, 188, 212, 0.4);
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #00bcd4;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #008c9e;
+    }
+
+    .note {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #666;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <a href="frontpage.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="destination.html">Destinations</a>
+            <a href="booking.html">Bookings</a>
+            <a href="payment.html">Payment</a>
+        </nav>
+    </header>
+  <div class="booking-container">
+    <h1>Book Your Trip</h1>
+    <form>
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select id="destination" required>
+          <option value="">-- Select Destination --</option>
+          <option>Paris</option>
+          <option>New York</option>
+          <option>Thailand</option>
+          <option>Hawai</option>
+          <option>Singapore</option>
+          <option>Japan</option>
+          <option>Maldives</option>
+          <option>Australia</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="checkin">Check-In Date</label>
+          <input type="date" id="checkin" required>
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-Out Date</label>
+          <input type="date" id="checkout" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="adults">Adults</label>
+          <input type="number" id="adults" min="1" max="10" value="1" required>
+        </div>
+        <div class="form-group">
+          <label for="children">Children</label>
+          <input type="number" id="children" min="0" max="10" value="0">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Special Requests</label>
+        <textarea id="message" rows="3" placeholder="Any preferences or requests?"></textarea>
+      </div>
+       <a href="payment.html">
+      <button type="submit" class="btn">Confirm Booking</button></a>
+      <p class="note">You will receive a confirmation email after booking.</p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/premium-photo/happy-woman-sitting-car-traveling-summer-season-sea-resting-special-day-vacation_36577-127.jpg')
+        no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navmenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 14px 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    list-style: none;
+}
+
+.navmenu li {
+    margin: 0 20px;
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu .active {
+    color: green;
+}
+
+form {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 120px; /* avoid navbar overlap */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75); /* glass effect */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 6px 0 4px;
+    display: block;
+}
+
+.box1,
+.box2 {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+    .navmenu {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .navmenu {
+        flex-direction: column;
+    }
+
+    .navmenu li {
+        margin: 8px 0;
+    }
+
+    form {
+        width: 90%;
+        margin-top: 140px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

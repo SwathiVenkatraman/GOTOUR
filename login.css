@@ -1,0 +1,78 @@
+
+body{
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/930/107/638/sky-sunset-beach-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    top:20%;
+    font-size:30px;
+}
+.container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding:  100px 0 15px;
+    top:40%;
+    font-size:20px;
+    
+}
+h1{
+    color:black;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 10px 10px;
+    text-justify:top 50%;
+    
+
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    font-size:20px;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+
+}
+i{
+    position: relative;
+    top: -33px;
+    left:150px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color:#fff;
+}
+.submit{
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 45px;
+    width: 50%;
+    padding:10px 0 10px 0 ;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7 1px rgba(0, 0 , 0,0.2);
+}
+
+.left{
+    display: flex;
+    color: #fff;
+}
+label a{
+    color: #fff;
+    text-decoration: none;
+
+}

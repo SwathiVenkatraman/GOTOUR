@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Destinations</title>
+    <script src="https://kit.fontawesome.com/42f3104ee1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-image: url('https://www.piscoandbier.com/wp-content/uploads/2020/11/turquoise-water-white-sand-beach-cancun-hotel-zone-773x515.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 80px; /* space for fixed header */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-family:'Poppins', sans-serif;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f9a825;
+        }
+
+        /* Section Title */
+        #category-name {
+            text-align: center;
+            font-size: 40px;
+            margin: 30px 0;
+            color: #4d1a09;
+            font-weight: 700;
+        }
+
+        /* Grid layout for destination cards */
+        #destination {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-content: center;
+            padding: 20px 50px;
+        }
+
+        /* Card Style */
+        .des-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 10px;
+
+    /* New: Flexbox layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pushes button to bottom */
+}
+
+        .des-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .des-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .des-name {
+            margin: 10px 0 5px;
+            font-weight: 600;
+            font-size: 20px;
+            color: darkslategray;
+        }
+
+        .des-price {
+            color: rgb(76, 107, 107);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .des-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto; /* push button to bottom */
+}
+
+
+        .btn:hover {
+            background-color: #008c9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="frontpage.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="destination.html">Destinations</a>
+            <a href="booking.html">Bookings</a>
+            <a href="payment.html">Payment</a>
+        </nav>
+    </header>
+
+    <h1 id="category-name">Top Destinations</h1>
+
+    <div id="destination">
+
+       
+        <div class="des-card">
+            <img src="https://i.pinimg.com/originals/ef/a7/06/efa706ac305f9a74a95280471b6d2d49.jpg" alt="Paris">
+            <p class="des-name">Paris</p>
+            <p class="des-price">Louvre Museum, Notre-Dame Cathedral & Eiffel Tower</p>
+            <p>3 days 2 nights (max 4 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 59,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://wallpaperaccess.com/full/99268.jpg" alt="New York">
+            <p class="des-name">New York</p>
+            <p class="des-price">The city that never sleeps with Broadway vibes</p>
+            <p>4 days 3 nights (max 6 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 109,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://w0.peakpx.com/wallpaper/195/791/HD-wallpaper-thailand-girl-boat-rocks-bay.jpg" alt="Thailand">
+            <p class="des-name">Thailand</p>
+            <p class="des-price">Tropical paradise with beaches & nightlife</p>
+            <p>3 days 2 nights (max 5 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 79,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://wallpapercave.com/wp/Nfp6RTb.jpg" alt="Hawai">
+            <p class="des-name">Hawai</p>
+            <p class="des-price">Waterfalls, beaches & perfect weather</p>
+            <p>5 days 4 nights (max 3 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 89,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+        <div class="des-card">
+            <img src="https://wallpapercave.com/wp/wp1841879.jpg" alt="singapore">
+            <p class="des-name">Singapore</p>
+            <p class="des-price">Louvre Museum, Notre-Dame Cathedral & Eiffel Tower</p>
+            <p>3 days 2 nights (max 4 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 59,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://i.pinimg.com/originals/c4/06/65/c40665c475735cf7436a12b9995998b2.jpg" alt="New York">
+            <p class="des-name">Japan</p>
+            <p class="des-price">The city that never sleeps with Broadway vibes</p>
+            <p>4 days 3 nights (max 6 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 109,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://w0.peakpx.com/wallpaper/371/1012/HD-wallpaper-maldives-at-night-resort-maldives-beautiful-lights.jpg" alt="Thailand">
+            <p class="des-name">Maldives</p>
+            <p class="des-price">Tropical paradise with beaches & nightlife</p>
+            <p>3 days 2 nights (max 5 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 79,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+        <div class="des-card">
+            <img src="https://www.earthsattractions.com/wp-content/uploads/2018/08/sydney_opera-unsplash.jpg" alt="Hawai">
+            <p class="des-name">Australia</p>
+            <p class="des-price">Waterfalls, beaches & perfect weather</p>
+            <p>5 days 4 nights (max 3 members)</p>
+            <p>💸 Package fare: <b style="color:purple">Rs. 89,999/-</b></p>
+            <a href="booking.html"><button class="btn">Book Now</button></a>
+        </div>
+
+     
+    </div>
+</body>
+</html>

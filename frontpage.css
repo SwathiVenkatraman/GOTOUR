@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'poppins',sans-serif;
+    list-style:none;
+    text-decoration: none;
+
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:22px 12%;
+    text-decoration: none;
+    margin-top: 5%;
+    font-size:25px;
+}
+
+
+.btn-icon{
+    display: flex;
+    align-items:center;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color:#212832;
+    z-index:10001;
+    cursor:pointer;
+    display:none;
+
+}
+section 
+{
+    padding:60px 12%;
+}
+.home
+{
+    width:100%;
+    height:100vh;
+    background-image: url(https://img.freepik.com/premium-photo/happy-woman-sitting-car-traveling-summer-season-sea-resting-special-day-vacation_36577-127.jpg);
+    background-position: center;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+}
+.home-img img{
+    max-width:100%;
+    width:800px;
+    height:auto;
+}
+.home-text h4
+{
+    color:#d46951;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    letter-spacing:0.5px;
+}
+.home-text h3{
+    color:#181e4b;
+    font-size:65px;
+    font-family:'volkhov';
+    font-weight:700;
+    line-height:70p;
+    letter-spacing:-0.04em;
+    margin-bottom:18px;
+}
+.home-text p{
+    color:#5e6282;
+    font-size:16px ;
+    font-weight:300px;
+    line-height:30px;
+    margin-bottom:30px;
+}
+.button
+{
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+}
+.btn1{
+    font-size:16px;
+    font-weight: 500;
+    font-style:normal;
+    color:white;
+    text-transform: capitalize;
+    padding:10px 20px;
+    background: #f1a501;
+    border-radius: 10px;
+    margin-right:40px;
+    transition:all .42s;
+    text-decoration: none;
+}
+.btn1:hover{
+    transform: translateY(-5px);
+}
+.btn2
+{
+    color:black;
+    font-size:16px;
+    font-weight:500;
+    text-transform:capitalize;
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn2 span i{
+    
+    width:42px;
+    height:42px;
+    background: #df6951;
+    color:#fff;
+    font-size:40px;
+    display:inline-block;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    box-shadow: 0px 15px 30px rgba(223,105,81,0.3);
+    margin-right:15px;
+    transition:all .42s;
+
+}
+.btn2 span 
+{
+    background:transparent;
+    color:#212832;
+}
+
