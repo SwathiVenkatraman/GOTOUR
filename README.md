@@ -83,7 +83,6 @@ GOTOUR/
 ## 👩‍💻 Contributors
 
 - [SwathiVenkatraman](https://github.com/SwathiVenkatraman)
-- [Yashwanth-Chandrakumar](https://github.com/Yashwanth-Chandrakumar)
 
 ---
 
